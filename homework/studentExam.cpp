@@ -9,9 +9,9 @@ void averageData();
 void displayData();
 
 struct student {
-        int stdId;
+        int Id;
         string stdName;
-        float test1,test2,test3,stdTotalScore;  
+        float percent1,percent2,percent3,stdTotalScore;  
 };
 bool sortData(student stdTotalScoreA,student stdTotalScoreB){
         if (stdTotalScoreA.stdTotalScore > stdTotalScoreB.stdTotalScore){
@@ -20,8 +20,8 @@ bool sortData(student stdTotalScoreA,student stdTotalScoreB){
 }
     struct student stdInfo[20];
     int highScore;
-    int stdId,countSumTest = 0;
-    float stdScore,averageTotalScore,stdTotalScore2,sumTest1,sumTest2,sumTest3,averageSumTest1,averageSumTest2,averageSumTest3;
+    int stdId,countSumpercent = 0;
+    float stdScore,averageTotalScore,stdTotalScore2,sumpercent1,sumpercent2,sumpercent3,averageSumpercent1,averageSumpercent2,averageSumpercent3;
     float countStdTotalScore = 0;
 int main() {
     getData();
@@ -34,37 +34,37 @@ int main() {
 void getData(){
     for (int i = 0; i <= 5; i++) {
           cout << "Enter your student id : ";
-          cin >> stdInfo[i].stdId;
+          cin >> stdInfo[i].Id;
           cout << "Enter your student name : ";
           cin >> stdInfo[i].stdName;
           do {
           cout << "Enter your student test1 (25%) : ";
-          cin >> stdInfo[i].test1;
-          }while (stdInfo[i].test1 > 25);
+          cin >> stdInfo[i].percent1;
+          }while (stdInfo[i].percent1 > 25);
           do {
           cout << "Enter your student test2 (25%) : ";
-          cin >> stdInfo[i].test2;
-          }while (stdInfo[i].test2 > 25);
+          cin >> stdInfo[i].percent2;
+          }while (stdInfo[i].percent2 > 25);
           do {
           cout << "Enter your student test3 (50%) : ";
-          cin >> stdInfo[i].test3;
-          }while (stdInfo[i].test3 > 50);
+          cin >> stdInfo[i].percent3;
+          }while (stdInfo[i].percent3 > 50);
     }
 }
 
 void averageData(){
     for (int i = 0; i <= 5; i++) {
-           sumTest1 += stdInfo[i].test1;
-           sumTest2 += stdInfo[i].test2;
-           sumTest3 += stdInfo[i].test3;
-           countSumTest++;
+           sumpercent1 += stdInfo[i].percent1;
+           sumpercent2 += stdInfo[i].percent2;
+           sumpercent3 += stdInfo[i].percent3;
+           countSumpercent++;
     }
-    averageSumTest1 = sumTest1/countSumTest;
-    averageSumTest2 = sumTest2/countSumTest;
-    averageSumTest3 = sumTest3/countSumTest;
+    averageSumpercent1 = sumpercent1/countSumpercent;
+    averageSumpercent2 = sumpercent2/countSumpercent;
+    averageSumpercent3 = sumpercent3/countSumpercent;
     for (int i = 0; i <= 5; i++) {
-           stdInfo[i].stdTotalScore = (stdInfo[i].test1 + stdInfo[i].test2 + stdInfo[i].test3);
-           stdTotalScore2 += (stdInfo[i].test1 + stdInfo[i].test2 + stdInfo[i].test3);
+           stdInfo[i].stdTotalScore = (stdInfo[i].percent1 + stdInfo[i].percent2 + stdInfo[i].percent3);
+           stdTotalScore2 += (stdInfo[i].percent1 + stdInfo[i].percent2 + stdInfo[i].percent3);
            countStdTotalScore++;
     }
     averageTotalScore = stdTotalScore2/countStdTotalScore;
@@ -76,10 +76,10 @@ void displayData(){
     cout << "----------------------------------------------------------------------------------------------------" << endl;
     for (int i = 0,count = 1; i <= 5; i++) {
             cout << fixed << setprecision(2);
-            cout << count << "\t" << stdInfo[i].stdId << "\t" << stdInfo[i].stdName << "\t" << stdInfo[i].test1 << "\t\t" << stdInfo[i].test2 << "\t\t" << stdInfo[i].test3 << "\t\t" << stdInfo[i].stdTotalScore << endl;
+            cout << count << "\t" << stdInfo[i].Id << "\t" << stdInfo[i].stdName  << "\t" << stdInfo[i].percent1 << "\t\t" << stdInfo[i].percent2 << "\t\t" << stdInfo[i].percent3 << "\t\t" << stdInfo[i].stdTotalScore << endl;
             count++;
     }
     cout << "----------------------------------------------------------------------------------------------------" << endl;
-    cout << "Average of mark" << "\t\t" << averageSumTest1 << "\t\t" << averageSumTest2 << "\t\t" << averageSumTest3 << "\t\t" << averageTotalScore;
+    cout << "Average of mark" << "\t\t" << averageSumpercent1 << "\t\t" << averageSumpercent2 << "\t\t" << averageSumpercent3 << "\t\t" << averageTotalScore;
 
 }
