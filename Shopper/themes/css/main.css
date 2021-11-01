@@ -69,10 +69,10 @@ a:hover{
 }
 .nav-tabs li.active, .accordion .accordion-heading {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: px;
 }
 #wrapper,#top-bar{
-	background: #fff;
+	background: rgb(255, 255, 255);
 	margin: 20px auto 20px auto;
 	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
@@ -90,10 +90,10 @@ section#copyright{
 section.header_text{
 	background:url(../images/bg_h.png) no-repeat bottom;
 	text-align:center;
-	padding:15px 0 20px 0;
+	padding:25px 0 20px 0;
 	font-size:16px;
 	line-height:30px;
-	border-bottom:1px solid #fff;
+	border-bottom:5px solid rgb(250, 79, 0);
 }
 section.homepage-slider{
 	border-bottom:1px dotted #eb4800;
@@ -150,12 +150,12 @@ iframe{
 /* top bar
 ----------------------------------------------------------------------------- */
 #top-bar{
-	background-color:#fff;
+	background-color:rgb(255, 58, 58);
 	padding:10px;
 	margin: 20px auto -22px auto;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 8px;
 }
 #top-bar .user-menu {
 	margin: 0;
@@ -166,8 +166,8 @@ iframe{
 	display: inline-block;
 	*display: inline;
 	zoom: 1;
-	border-right: 1px solid #eee;
-	padding: 5px 12px;
+	border-right: 1px solid rgb(250, 15, 15);
+	padding: 12px 12px;
 }
 #top-bar .user-menu li:last-child{
 	border-right:0;
