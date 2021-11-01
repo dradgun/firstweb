@@ -27,7 +27,7 @@ a{
 	color: rgb(255, 81, 0);
 }
 a:hover{
-	color:#fd4004;
+	color:#f5e7e3;
 	text-decoration:none;
 }
 .img-al{
@@ -219,7 +219,7 @@ section#footer-bar  .nav a{
 section#footer-bar h4 {
 	padding: 0;
 	font-size: 16px;
-	color: #fff;
+	color: rgb(255, 71, 71);
 	font-weight:normal;
 	margin: 10px 0 18px;	
 }
@@ -260,7 +260,7 @@ section#footer-bar .social_icons a.vimeo:hover {
 	background-position: -115px -29px;
 }
 section#copyright{
-	background-color:#111111;
+	background-color:#fc4646;
 	color:#fff;
 	font-size:10px;
 	text-transform:uppercase;	
@@ -528,11 +528,11 @@ section.our_client .row{
 	margin-bottom:0;
 }
 .search_form input{
-	background: url(../images/search.png) #fff no-repeat 97% 6px;
-	color:#fff;
+	background: url(../images/search.png) rgb(253, 226, 226) no-repeat 97% 6px;
+	color:rgb(0, 0, 0);
 	text-shadow:none;
 	padding-right:25px;	
-	border:1px solid #eee;
+	border:1px solid rgb(0, 0, 0);
 }
 #homeTab{
 	min-height:210px;
