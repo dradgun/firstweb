@@ -528,7 +528,7 @@ section.our_client .row{
 	margin-bottom:0;
 }
 .search_form input{
-	background: url(../images/search.png) rgb(253, 226, 226) no-repeat 97% 6px;
+	background: url(../images/search.png) rgb(255, 255, 255) no-repeat 97% 6px;
 	color:rgb(0, 0, 0);
 	text-shadow:none;
 	padding-right:25px;	
