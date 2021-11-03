@@ -24,12 +24,12 @@ int main(){
 void insertnum(int num[],int max,int amount){
     num[max-1]=amount;
     for(int i = 0 ; i<max;i++){
-        for(int n = i ; n<max;n++){
-            if(num[i]>num[n]){
+        for(int l = i ; l<max;l++){
+            if(num[i]>num[l]){
                 int read;
                 read = num[i];
-                num[i]=num[n];
-                num[n]=read;
+                num[i]=num[l];
+                num[l]=read;
             }
         }
     }
