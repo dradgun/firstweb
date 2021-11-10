@@ -29,8 +29,12 @@
     width: 80%;
     background-color: #f1f1f1;
     height: 2000px; /* only for demonstration, should be removed */
+    
   }
-  
+    button:hover{
+      background-color:rgb(4, 183, 238);
+      color:black
+  }
   /* Clear floats after the columns */
   section::after {
     content: "";
@@ -56,3 +60,4 @@
       height: auto;
     }
   }
+  

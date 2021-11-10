@@ -55,14 +55,15 @@
       <article>
         <h3>กรอกข้อมูลนักศึกษา</h3>
     <table class="table">
+      <form>
     	<tr>
     		<td>ชื่อ : </td>
-    		<td><input type="text" name="" ></td>
+    		<td><input type="text" name="" required ></td>
     	</tr>
     	<tr>
     		<td>นามสกุล : </td>
-    		<td><input type="text" name="" ></td>
-    	</tr>
+    		<td><input type="text" name="" required ></td>
+    	</tr> 
     	<tr>
     		<td>วันเกิด : </td>
     		<td><input type="date" name="" ></td>
@@ -144,11 +145,13 @@
     		<td>รูปถ่ายของคุณ : </td>
     		<td><input type="file" name="" ></td>
     	</tr>
-    	<tr>
-    		<td ><button class="button1" >ยืนยัน</button></td>
-    		<td ><button class="button1" >ยกเลิก</button></td>
-    	</tr>
+    
     </table>
+    <tr>
+      <button type="submit"  value="Submit" name="submit">ยืนยัน</button>
+      <button type="button" >ยกเลิก</button>
+    </tr>
+    </form>
         </article>
     </section>
     
